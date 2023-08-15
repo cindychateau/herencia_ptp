@@ -1,7 +1,7 @@
 package com.codingdojo.cynthia;
 
 /*Me hereda de la clase Vehicle*/
-public class Car extends Vehicle {
+public class Car extends Vehicle implements DriveVehicle, Mantenimiento {
 	
 	/*Me hereda todas las variables miembro/atributos y métodos
 	 * Solo las nuevas variables miembro son las que tenemos que escribir
@@ -37,6 +37,16 @@ public class Car extends Vehicle {
 		System.out.println("I'm decelerating");
 		this.speed -= 2;
 		System.out.println("My speed is:"+this.speed);
+	}
+	
+	public void turnRight() {
+		System.out.println("Ponemos la direccional con flecha a la derecha");
+		System.out.println("Coloca al volante volteando a la derecha");
+	}
+	
+	public void turnLeft() {
+		System.out.println("Ponemos la direccional con flecha a la izquierda");
+		System.out.println("Coloca al volante volteando a la izquierda");
 	}
 	
 }

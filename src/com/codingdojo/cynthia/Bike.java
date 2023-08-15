@@ -1,6 +1,6 @@
 package com.codingdojo.cynthia;
 
-public class Bike extends Vehicle {
+public class Bike extends Vehicle implements DriveVehicle {
 	
 	//Constructor se hereda directamente de Vehicle
 	public Bike(int year, String brand, String model, int wheels) {
@@ -19,6 +19,18 @@ public class Bike extends Vehicle {
 		System.out.println("Feet down");
 		this.speed -= 1;
 		System.out.println("My speed is:"+this.speed);
+	}
+
+	@Override
+	public void turnRight() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnLeft() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

@@ -29,6 +29,23 @@ public class Application {
 		bike1.accelerate();
 		bike1.decelerate();
 		
+		car1.drive();
+		car1.turnLeft();
+		
+		bike1.drive();
+		
+		car1.cambiarAceite();
+		
+		/* CLASES ABSTRACTAS */
+		Square sq1 = new Square(10);
+		System.out.println(sq1.area());
+		
+		//Triangle tr1 = new Triangle(10, 5);
+		Triangle tr1 = new Triangle(10, 5);
+		System.out.println("Area:"+tr1.area()+" Width:"+tr1.getWidth()+" Height:"+tr1.getHeight());
+		
+		tr1.setWidth(5);
+		
 	}
 
 }
